@@ -20,4 +20,14 @@ describe('request', () => {
   it('should return an object', () => {
     request({}).should.be.an('Object');
   });
+
+  describe('`.method`', () => {
+    it('should return the HTTP method used by the original request', () => {
+      let req = request({
+        method: 'test'
+      });
+
+      req.method.should.equal('test');
+    });
+  });
 });
