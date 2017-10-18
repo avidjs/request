@@ -1,6 +1,6 @@
 {
   "name": "@avidjs/request",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Wraps a Node.js HTTP IncomingMessage object.",
   "author": "Connor Wiseman",
   "contributors": [
