@@ -207,6 +207,12 @@ describe('request', () => {
     });
   });
 
+  describe ('.original', () => {
+    it('should return the original request', () => {
+      request(origReq, settings).original.should.deep.equal(origReq);
+    });
+  });
+
   describe('.originalUrl', () => {
     it('should return the URL used by the original request', () => {
       origReq.url = 'test';
